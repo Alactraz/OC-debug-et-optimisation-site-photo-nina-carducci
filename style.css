@@ -90,9 +90,6 @@ width: 80%;
 font-size: 14px;
 }
 
-#gallery {
-/*	min-height: 100vh; */
-}
 .title{
 text-align: center;
 padding-block: 2em;
@@ -318,7 +315,6 @@ right: 0;
 z-index: -1;
 }
 }
-
 @media all and (max-width: 650px) {
 .top-header {
 flex-direction: column;
