@@ -2,11 +2,11 @@
 <html lang="fr">
 
 <head>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var elm=document.getElementsByTagName("html")[0];
         elm.style.display="none";
         document.addEventListener("DOMContentLoaded",function(event) {elm.style.display="block"; });
-        </script>
+        </script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.min.css" >
@@ -16,8 +16,21 @@
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
         rel="stylesheet" >
     <meta charset="UTF-8">
-   
-
+    <script>
+        setTimeout(function(){
+          document.querySelector('#image1').style.opacity="1";
+        },3000); /* 3000 correspond au delai en ms (3000 = 3s)*/
+      </script>
+         <script>
+            setTimeout(function(){
+              document.querySelector('#image2').style.opacity="1";
+            },3000); /* 3000 correspond au delai en ms (3000 = 3s)*/
+          </script>
+             <script>
+                setTimeout(function(){
+                  document.querySelector('#image3').style.opacity="1";
+                },3000); /* 3000 correspond au delai en ms (3000 = 3s)*/
+              </script>
     <meta name="description"
         content="Site web de Nina Carducci, photographe capturant des moments uniques avec passion et créativité." />
     <title> Photographe Nina Carducci</title>
@@ -102,7 +115,7 @@
                         <picture>
                             <source srcset="./assets/images/slider/ryoji-iwata-sliderMobile.webp"
                                 media="(max-width: 768px)" />
-                            <img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100"
+                            <img src="./assets/images/slider/ryoji-iwata.webp" id="image1" class="d-block w-100"
                                 alt="Homme qui traverse un passage piéton" />
                         </picture>
                     </div>
@@ -111,7 +124,7 @@
                             <source srcset="
                     ./assets/images/slider/nicholas-green-sliderMobile.webp
                   " media="(max-width: 768px)" />
-                            <img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100"
+                            <img src="./assets/images/slider/nicholas-green.webp" id="image2" class="d-block w-100"
                                 alt="Foule qui danse" />
                         </picture>
                     </div>
@@ -119,7 +132,7 @@
                         <picture>
                             <source srcset="./assets/images/slider/mariageDanseSliderMobile.webp"
                                 media="(max-width: 768px)" />
-                            <img src="./assets/images/slider/mariageDanse.webp" class="d-block w-100"
+                            <img src="./assets/images/slider/mariageDanse.webp" id="image3" class="d-block w-100"
                                 alt="Mariga Danse" />
                         </picture>
                     </div>
